@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>대한적십자</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="format-detection" content="telephone=no, address=no, email=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, usrr-scalable=no">
+<meta name="title" content="대한적십자">
+<meta name="keywords" content="대한적십자">
+<link rel="stylesheet" href="./css/base.css" type="text/css" />
+<link rel="stylesheet" href="./css/font.css" type="text/css" />
+<link rel="stylesheet" href="./css/layout.css" type="text/css" />
+<script  src="./js/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+<header class='top_bg'>
+	<div class="header_wrap">
+		<h1><a href="#">대한적십자</a></h1>
+		<a class="menu" href="#none">menu</a>
+		<ul class="utility">
+			<li><strong>홍길동(test01)</strong> 님 반갑습니다.</li>
+			<li><a href="">로그아웃</a></li>
+		</ul>
+	</div>
+</header>
+<script>
+$(document).ready(function () {
+	$(".sub_title").text("시스템 접근 권한");
+	$(".sub_nav_inner > li:eq(1)").addClass("on"); //왼쪽메뉴
+	$(".sub_nav_inner > li:eq(1) > ul").css("display","block"); //왼쪽메뉴
+	$(".sub_nav_inner > li > ul > li:eq(0) > a").addClass("on"); //왼쪽메뉴
+});
+</script>
+<!--[s]전체 내용영역-->
+<div class="contents_wrap">
+	<!--[s]왼쪽 lnb영역-->
+	<div class="sub_nav ani">
+		<h2 class="sub_title"></h2>
+		<ul class="sub_nav_inner">
+			<li>
+				<a href="sub02_00.html">비밀번호 변경</a>
+			</li>
+			<li>
+				<a class="add" href="#none">시스템 접근 권한</a>
+				<ul>
+					<li><a href="sub02_01.html">권한 신청</a></li>
+					<li><a href="sub02_04.html">권한 승인</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class="add" href="#none">IT자료실</a>
+				<ul>
+					<li><a href="sub02_06.html">자주하는 질문</a></li>
+					<li><a href="sub02_07.html">매뉴얼</a></li>
+					<li><a href="#none">설치파일</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!--[E]왼쪽 lnb영역-->
+	<!--[S]오른쪽 내용 영역-->
+	<div class="sub_wrap">
+		<h2 class="title">권한 신청</h2>
+		<div class="sub_content_wrap">
+		<p class="mb10">※ 권한 신청 목록을 확인할 수 있습니다.</p>
+			<form>
+			<div class="search_box_wrap clearfix">
+				<div class="box01">
+					<div class="select-box">
+						<select title="보기선택">
+							<option>10건</option>
+						</select>
+					</div>
+				</div>
+				<div class="box02">
+					<label class="hidden">신청구분</label>
+					<div class="select-box">
+						<select title="신청구분 선택">
+							<option>전체</option>
+						</select>
+					</div>
+
+					<label class="hidden" for="lb_name">검색어 입력</label>
+					<div class="select-box">
+						<input type="text" id="lb_name" name="lb_name" value="" placeholder="검색어 입력" title="검색어 입력">
+						<button type="button" class="button">검색</button>
+					</div>
+					
+				</div>
+			</div>
+			</form>
+			<h3 class="sub_s_title">권한 신청 목록</h3>
+			<div class="table-wrap scroll">
+				<table>
+					<caption>권한 신청 리스트</caption>
+					<colgroup>
+						<col style="width:90px">
+						<col style="width:13%">
+						<col style="width:16%">
+						<col style="width:auto">
+						<col style="width:17%">
+						<col style="width:17%">
+						<col style="width:17%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">결재 번호</th>
+							<th scope="col">신청자 아이디</th>
+							<th scope="col">신청자 명</th>
+							<th scope="col">부서명</th>
+							<th scope="col">상태</th>
+							<th scope="col">신청일시</th>
+							<th scope="col">완료일시</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>219</td>
+							<td><a href="sub02_03.html">Test01</a></td>
+							<td>테스트</td>
+							<td>정보팀</td>
+							<td>완료(승인)</td>
+							<td><p class="number">2020-03-27 13:55:47</p></td>
+							<td><p class="number">2020-03-27 17:55:16</p></td>
+						</tr>
+						<tr>
+							<td>218</td>
+							<td><a href="sub02_03.html">Test01</a></td>
+							<td>테스트</td>
+							<td>정보팀</td>
+							<td>완료(승인)</td>
+							<td><p class="number">2020-03-27 13:55:47</p></td>
+							<td><p class="number">2020-03-27 17:55:16</p></td>
+						</tr>
+						<tr>
+							<td>217</td>
+							<td><a href="sub02_03.html">Test01</a></td>
+							<td>테스트</td>
+							<td>정보팀</td>
+							<td>완료(승인)</td>
+							<td><p class="number">2020-03-27 13:55:47</p></td>
+							<td><p class="number">2020-03-27 17:55:16</p></td>
+						</tr>
+					</tbody>			
+				</table>
+				<span class="scroll_img">스크롤</span>
+			</div>
+			<div class="page con-mb-base" id="divPaging">
+				<button type="button" class="btn-first">맨 처음</button>
+				<button type="button" class="btn-prev">이전</button>
+				<a href="#" class="this-page">1</a>
+				<a href="#">2</a>
+				<a href="#">3</a>
+				<a href="#">4</a>
+				<a href="#">5</a>
+				<a href="#">6</a>
+				<a href="#">7</a>
+				<a href="#">8</a>
+				<a href="#">9</a>
+				<a href="#">10</a>
+				<button type="button" class="btn-next" onclick="goList(11)">다음</button>
+				<button type="button" class="btn-last" onclick="goList(156)">맨 마지막</button>
+			</div>
+			<div class="fr"><button type="button" class="button02" onclick="location.href='sub02_02.html'">권한신청</button></div>
+		</div>
+	</div>
+	<!--[E]오른쪽 내용 영역-->
+</div>	
+<!--[E]전체 내용영역-->
+
+<!--[s]하단저작권영역-->
+<footer>
+	<div class="footer_wrap">
+		<div class="copyright_wrap">
+			<p class="f_red">주의사항 : 개인정보 부정사용과 오·남용 예방을 위하여 개인정보보호 통합모니터링 시스템을 운영하고 있습니다.<br />업무시스템에서 조회하는 모든 개인정보는 업무목적으로만 이용하도록 하며, 관련법 및 규정을 위반할 경우 처벌되니 유의하시기 바랍니다.​</p>
+			<p class="mt10">Copyright (c) Korea Red Cross. All rights reserved.</p>
+		</div>
+	</div>
+</footer>
+<!--[E]하단저작권영역-->
+<div id="dimmed"></div>
+<script  src="./js/common.js"></script>
+</body>
+</html>

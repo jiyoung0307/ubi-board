@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>대한적십자</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="format-detection" content="telephone=no, address=no, email=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, usrr-scalable=no">
+<meta name="title" content="대한적십자">
+<meta name="keywords" content="대한적십자">
+<link rel="stylesheet" href="./css/base.css" type="text/css" />
+<link rel="stylesheet" href="./css/font.css" type="text/css" />
+<link rel="stylesheet" href="./css/layout.css" type="text/css" />
+<script  src="./js/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+<header class='top_bg'>
+	<div class="header_wrap">
+		<h1><a href="#">대한적십자</a></h1>
+		<a class="menu" href="#none">menu</a>
+		<ul class="utility">
+			<li><strong>홍길동(test01)</strong> 님 반갑습니다.</li>
+			<li><a href="">로그아웃</a></li>
+		</ul>
+	</div>
+</header>
+<script>
+$(document).ready(function () {
+	$(".sub_title").text("시스템 접근 권한");
+	$(".sub_nav_inner > li:eq(1)").addClass("on"); //왼쪽메뉴
+	$(".sub_nav_inner > li:eq(1) > ul").css("display","block"); //왼쪽메뉴
+	$(".sub_nav_inner > li > ul > li:eq(0) > a").addClass("on"); //왼쪽메뉴
+});
+</script>
+<!--[s]전체 내용영역-->
+<div class="contents_wrap">
+	<!--[s]왼쪽 lnb영역-->
+	<div class="sub_nav ani">
+		<h2 class="sub_title"></h2>
+		<ul class="sub_nav_inner">
+			<li>
+				<a href="sub02_00.html">비밀번호 변경</a>
+			</li>
+			<li>
+				<a class="add" href="#none">시스템 접근 권한</a>
+				<ul>
+					<li><a href="sub02_01.html">권한 신청</a></li>
+					<li><a href="sub02_04.html">권한 승인</a></li>
+				</ul>
+			</li>
+			<li>
+				<a class="add" href="#none">IT자료실</a>
+				<ul>
+					<li><a href="sub02_06.html">자주하는 질문</a></li>
+					<li><a href="sub02_07.html">매뉴얼</a></li>
+					<li><a href="#none">설치파일</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!--[E]왼쪽 lnb영역-->
+	<!--[S]오른쪽 내용 영역-->
+	<div class="sub_wrap">
+		<h2 class="title">권한 신청</h2>
+		<div class="sub_content_wrap">
+			<h3 class="sub_s_title">권한 신청 정보</h3>
+			<p class="mb10 mt10">※ 시스템별 접근 권한을 신청할 수 있습니다.</p>
+			<div class="table-wrap td_left">
+				<table>
+					<caption>권한 신청 정보 리스트</caption>
+					<colgroup>
+						<col style="width:150px">
+						<col style="width:auto">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">유형</th>
+							<td>시스템 접근 권한 신청</td>
+						</tr>
+						<tr>
+							<th scope="row">신청자</th>
+							<td>테스트(test01)</td>
+						</tr>
+						<tr>
+							<th scope="row">신청일자</th>
+							<td><p class="number">2020-04-02</p></td>
+						</tr>
+					</tbody>			
+				</table>
+			</div>
+			<div class="tar mt10"><a class="button03" href="#none">추가</a></div>
+			<div class="table-wrap td_left">
+				<table>
+					<caption>권한 신청 정보 리스트</caption>
+					<colgroup>
+						<col style="width:150px">
+						<col style="width:auto">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"><label for="ib_select01">시스템</label></th>
+							<td><div class="select-box wp250">
+									<select title="연동시스템선택" id="ib_select01">
+										<option>시스템1</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="ib_select02">담당자</label></th>
+							<td><div class="select-box wp250">
+									<select title="시스템 담당자 선택" id="ib_select02">>
+										<option>홍길동(시스템1 관리자)</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="ib_textarea">사유</label></th>
+							<td><textarea id="ib_textarea"></textarea></td>
+						</tr>
+					</tbody>			
+				</table>
+			</div>
+			
+			<div class="tar mt10"><a class="button04" href="#none">삭제</a></div>
+			<div class="table-wrap td_left">
+				<table>
+					<caption>권한 신청 정보 리스트</caption>
+					<colgroup>
+						<col style="width:150px">
+						<col style="width:auto">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"><label for="ib_select03">시스템</label></th>
+							<td><div class="select-box wp250">
+									<select title="연동시스템선택" id="ib_select03">
+										<option>시스템1</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="ib_select04">담당자</label></th>
+							<td><div class="select-box wp250">
+									<select title="시스템 담당자 선택" id="ib_select04">>
+										<option>홍길동(시스템1 관리자)</option>
+									</select>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><label for="ib_textarea01">사유</label></th>
+							<td><textarea id="ib_textarea01"></textarea></td>
+						</tr>
+					</tbody>			
+				</table>
+			</div>
+			<div class="mt10 dib"><button type="button" class="button02" onclick="location.href='sub02_01.html'">목록</button></div>
+			<div class="fr mt10"><button type="button" class="button02">저장</button></div>
+		</div>
+	</div>
+	<!--[E]오른쪽 내용 영역-->
+</div>	
+<!--[E]전체 내용영역-->
+
+<!--[s]하단저작권영역-->
+<footer>
+	<div class="footer_wrap">
+		<div class="copyright_wrap">
+			<p class="f_red">주의사항 : 개인정보 부정사용과 오·남용 예방을 위하여 개인정보보호 통합모니터링 시스템을 운영하고 있습니다.<br />업무시스템에서 조회하는 모든 개인정보는 업무목적으로만 이용하도록 하며, 관련법 및 규정을 위반할 경우 처벌되니 유의하시기 바랍니다.​</p>
+			<p class="mt10">Copyright (c) Korea Red Cross. All rights reserved.</p>
+		</div>
+	</div>
+</footer>
+<!--[E]하단저작권영역-->
+<div id="dimmed"></div>
+<script  src="./js/common.js"></script>
+</body>
+</html>

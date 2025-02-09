@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+
+/* LAYOUT */
+html, body {margin:0; padding:0; width:100%; height:100%;}
+#header	{margin: 0 auto;text-align: center}
+#header nav {border-top: 1px solid #dadada}
+#header:after, #content:after {clear:both;}
+#content {width: 100%;min-height: 798px;background: url(../img/pattern01.png) repeat left top;padding: 60px 0}
+.wrap {position:relative; overflow:hidden; margin:0 auto; width:1100px; padding:60px; background:#FFFFFF;}
+
+#content .bg_color {background: url(../img/shape_bg.png) no-repeat center 40px}
+
+#header h1 {padding:30px 0; width:163px;display:inline-block}
+#header ul {padding:0; font-size:0;}
+#header ul li {display:inline-block}
+#header ul li a {display: inline-block;font-size: 17px;color: #353535;padding: 17px 49px;text-align: center;border-left: 1px solid #dadada;border-right: 1px solid #dadada;margin-right: -1px}
+
+#content h2 {text-align:center; margin-bottom:40px;}
+#content .txt {padding: 40px 138px}
+#content .txt h3 {font-size:36px; font-weight:700; color:#0065b2; text-align:center;}
+#content .txt p {font-size:15px; font-family:'Nanum Gothic', '나눔고딕'; font-weight:400; margin-top:23px; line-height:26px;text-align: center}
+#content .login_box {border: 1px #e6e6e6 solid;padding: 40px 0 40px 210px;background: url(../img/login_icon.png) no-repeat 65px 42px}
+#content .login_box ul {margin:0; padding:0; font-size:0;}
+#content .login_box ul > li {display:inline-block;}
+#content .login_box ul > li > ul > li {display:block;}
+#content .login_box ul > li > ul > li > label {display:inline-block; width:106px; vertical-align:middle; font-size:21px; font-weight:700; color:#005eae;}
+#content .login_box ul > li > ul > li > input {padding-left:16px; width:360px; height:40px; line-height:40px; border:1px solid #dddddd; font-size:14px; color:#666666; font-family:'Nanum Gothic', '나눔고딕';}
+#content .login_box p {color:#ff7f00; text-align:right; padding-right:49px; margin-top:20px; font-family:'Nanum Gothic', '나눔고딕';}
+
+button.btn_login {display:inline-block; *display:inline; *zoom:1; width:230px; height:94px;background: url(../img/login_pattern.png) #5674b9 no-repeat 50%; font-size:30px; font-weight:700; color:#ffffff; text-align:center; text-decoration:none; cursor:pointer; margin-left:20px;}
+button.btn_login:hover {background:#0058cc; color:#ffffff; cursor:pointer;}
+.mt14 {margin-top:14px;}
+.fl {float:left;}
+
+#footer {position:relative; }
+#footer div.foot_bottom {position:relative; background:#fff; }
+#footer div.foot_inner  {margin:0 auto; padding:27px 0 40px 0; width:1100px; }
+#footer div.foot_inner:after {content:""; display:block; clear:both; }
+#footer div.foot_inner h2 {float:left; padding-top:18px; }
+#footer div.foot_info {float:left; margin-left:47px; }
+#footer ul.foot_menu  {margin-bottom:20px; }
+#footer ul.foot_menu:after {content:""; display:block; clear:both; }
+#footer ul.foot_menu li {float:left; padding-left:9px; margin-left:8px; background:url('https://www.asan.go.kr/main/common/user/img/common/foot_line.jpg') 0 3px no-repeat; }
+#footer ul.foot_menu li:first-child {padding-left:0; margin-left:0; background:none; }
+#footer ul.foot_menu li a {font-size:14px !important; color:#000; font-family:'Nanum Gothic' !important; }
+#footer ul.foot_menu li a:hover, a:focus, a:active {color:#f60; }
+#footer p.copy {font-size:13px !important; color:#606261; line-height:1.6; font-family:'Nanum Gothic' !important; }
+

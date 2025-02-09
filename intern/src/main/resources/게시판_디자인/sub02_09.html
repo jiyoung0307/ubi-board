@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>대한적십자</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="format-detection" content="telephone=no, address=no, email=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, usrr-scalable=no">
+<meta name="title" content="대한적십자">
+<meta name="keywords" content="대한적십자">
+<link rel="stylesheet" href="./css/base.css" type="text/css" />
+<link rel="stylesheet" href="./css/font.css" type="text/css" />
+<link rel="stylesheet" href="./css/layout.css" type="text/css" />
+<script  src="./js/jquery-1.11.3.min.js"></script>
+</head>
+<body>
+<header class='top_bg'>
+	<div class="header_wrap">
+		<h1><a href="#">대한적십자</a></h1>
+	</div>
+</header>
+<script>
+$(document).ready(function () {
+	$(".sub_title").text("시스템 접근 권한");
+	$(".sub_nav_inner > li:eq(2)").addClass("on"); //왼쪽메뉴
+	$(".sub_nav_inner > li:eq(2) > ul").css("display","block"); //왼쪽메뉴
+	$(".sub_nav_inner > li:eq(2) > ul > li:eq(1) > a").addClass("on"); //왼쪽메뉴
+});
+</script>
+<!--[s]전체 내용영역-->
+<div class="contents_wrap">
+	<div class="error_wrap">
+		<em></em>
+		<strong>이용에 불편을 드려 죄송합니다.</strong>
+		<p>요청하신 페이지를 찾을 수가 없습니다.<br />
+			찾으시는 페이지가 삭제되었거나 이름이 변경된 경우 일시적으로 사용할 수 없습니다.
+		</p>
+		<span>이전화면으로 이동해주세요.</span>
+		<div class="tac mb10 mt20"><a href="" class="button02">이전화면</a></div>
+	</div>
+	
+</div>	
+<!--[E]전체 내용영역-->
+
+<!--[s]하단저작권영역-->
+<footer>
+	<div class="footer_wrap">
+		<div class="copyright_wrap">
+			<p class="f_red">주의사항 : 개인정보 부정사용과 오·남용 예방을 위하여 개인정보보호 통합모니터링 시스템을 운영하고 있습니다.<br />업무시스템에서 조회하는 모든 개인정보는 업무목적으로만 이용하도록 하며, 관련법 및 규정을 위반할 경우 처벌되니 유의하시기 바랍니다.​</p>
+			<p class="mt10">Copyright (c) Korea Red Cross. All rights reserved.</p>
+		</div>
+	</div>
+</footer>
+<!--[E]하단저작권영역-->
+<div id="dimmed"></div>
+<script  src="./js/common.js"></script>
+</body>
+</html>
